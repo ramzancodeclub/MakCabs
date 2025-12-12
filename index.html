@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mak Cabs — Ride with Comfort and Care | Book a Taxi Online</title>
+    <meta name="description" content="Mak Cabs — safe, reliable taxi & transfer services. Book airport transfers, hourly hires, group travel and corporate accounts. 24/7 support." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:url" content="https://makcabs.com" />
+    <meta property="og:title" content="Mak Cabs — Ride with Comfort and Care | Book a Taxi Online" />
+    <meta property="og:description" content="Mak Cabs — safe, reliable taxi & transfer services. Book airport transfers, hourly hires, group travel and corporate accounts. 24/7 support." />
+    <meta property="og:image" content="https://picsum.photos/1200/630?grayscale&blur=2" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://makcabs.com" />
+    <meta property="twitter:title" content="Mak Cabs — Ride with Comfort and Care" />
+    <meta property="twitter:description" content="Safe, reliable rides — on demand or pre-booked. 24/7 support." />
+    <meta property="twitter:image" content="https://picsum.photos/1200/630?grayscale&blur=2" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0B6CF6', // Deep Azure
+              secondary: '#FFB400', // Warm Amber
+              dark: '#0F1724', // Neutral Dark
+              light: '#F6F8FB', // Light BG
+              success: '#16A34A',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            animation: {
+              'drive-in': 'driveIn 1s ease-out forwards',
+              'bounce-subtle': 'bounceSubtle 2s infinite',
+            },
+            keyframes: {
+              driveIn: {
+                '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                '100%': { transform: 'translateX(0)', opacity: '1' },
+              },
+              bounceSubtle: {
+                '0%, 100%': { transform: 'translateY(-3%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Accessibility Focus Styles */
+      :focus-visible {
+        outline: 3px solid #FFB400;
+        outline-offset: 2px;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F6F8FB;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CBD5E1;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94A3B8;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-light text-dark antialiased">
+    <div id="root"></div>
+  </body>
+</html>
